@@ -1,0 +1,38 @@
+:root{
+    --color1:rgb(253, 253, 253);
+    --color2:rgb(88, 215, 247);
+    --text1:rgb(13, 56, 102);
+}
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.text1{
+    color:var(--text1);
+}
+.navbar-collapse{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+.nav-link{
+    color:var(--color1);
+    margin:0px 15px;
+}
+#top-banner{
+    width:100vw;
+    height:800px;
+}
+.banner-text{
+    padding-top: 70px;
+    
+}
+.banner-text h2{
+    color:var(--text1);
+    font-size:5rem;
+}
+#banner-img{
+    width:700px;
+}
+#banner-img-con{
+    padding:0;
+}
