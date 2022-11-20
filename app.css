@@ -10,6 +10,9 @@ body{
 .text1{
     color:var(--text1);
 }
+.text-serif{
+    font-family: serif;
+}
 .navbar-collapse{
     padding-right: 20px;
     justify-content: flex-end;
@@ -18,21 +21,34 @@ body{
     color:var(--color1);
     margin:0px 15px;
 }
-#top-banner{
-    width:100vw;
-    height:800px;
-}
 .banner-text{
-    padding-top: 70px;
-    
+    padding: 70px 0px 0px 0px;
+    margin:0px;
 }
 .banner-text h2{
     color:var(--text1);
     font-size:5rem;
 }
+@media (max-width:1000px){
+    .banner-text h2{
+        font-size:3rem;
+    }
+}
+.row{
+    margin:0px;
+}
 #banner-img{
     width:700px;
 }
+@media (max-width:1400px){
+    #banner-img{
+        width:48vw;
+        min-width:400px;
+    }
+}
 #banner-img-con{
     padding:0;
+}
+.card{
+    border:none;
 }
