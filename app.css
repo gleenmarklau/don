@@ -52,3 +52,31 @@ body{
 .card{
     border:none;
 }
+#img-srvs{
+    width:100vw;;
+    min-height:160px;
+    object-fit: cover;
+}
+/*
+#services{
+    margin-top:-58px;
+}
+*/
+
+.stylize1{
+    display:inline-block;
+    color:white;
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.5);
+    width:350px;
+    padding: 5px 0px;
+    z-index: 100;
+    text-align: center;
+}
+.img-crop1{
+    object-fit: cover;
+}
+li{
+    font-size:1.5rem;
+}
