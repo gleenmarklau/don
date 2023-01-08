@@ -7,6 +7,7 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--text1);
 }
 #banner{
     background-color:rgba(126, 199, 17, 0.76);
@@ -78,6 +79,9 @@ body{
     padding-bottom:15px;
     padding-top:15px;
 }
+#services h3{
+    color:rgb(223, 234, 236);
+}
 
 .stylize1{
     display:inline-block;
@@ -92,8 +96,14 @@ body{
     object-fit: cover;
 }
 li{
-    font-size:1.1rem;
-    font-weight: lighter;
+    font-size:1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.srvcs-list h5{
+    font-size: 1rem;
+}
+.srvcs-list h2{
+    font-size: 1.5rem;
 }
 
 footer{
@@ -105,4 +115,9 @@ footer{
 }
 footer p{
     margin:0px;
+}
+#footerLogo{
+    filter: grayscale(100%);
+    max-width:150px;
+    max-height:150px;
 }
