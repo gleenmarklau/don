@@ -11,6 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <!-- Local CSS -->
     <link rel="stylesheet" href="app.css">
     <link rel="icon" href="images/logo.png">
@@ -18,9 +19,7 @@
 </head>
 
 <body>
-  <div id="banner">
-    <p class="ps-2">Need an appointment? Call <span class="lead text-white">718-585-0888</span></p>
-  </div>
+
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
           <a class="navbar-brand ps-md-5 text-white" href="#"><img class="logo" src="images/logo.png" alt="logo"><span class="ms-md-2">Mangoos Physical Therapy</span></a>
@@ -29,18 +28,20 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">HOME</a>
-              <a class="nav-link" href="#">SERVICES</a>
-              <a class="nav-link" href="#">ABOUT US</a>
-              <a class="nav-link" href="#">OUR DOCTORS</a>
-              <a class="nav-link" href="#">FACILITIES</a>
-              <a class="nav-link" href="#">GALLERY</a>
-              <a class="nav-link" href="#">LOCATION</a>
-              <a class="nav-link" href="#">CONTACT US</a>
+              <a class="nav-link" aria-current="page" href="#top-banner">HOME</a>
+              <a class="nav-link" href="#about-us-anchor">ABOUT US</a>
+              <a class="nav-link" href="#services-anchor">SERVICES</a>
+              <a class="nav-link" href="#doctors-anchor">OUR DOCTORS</a>
+              <a class="nav-link" href="#insurance-anchor">ACCEPTED INSURANCE</a>
+              <a class="nav-link" href="#footer">CONTACT US</a>
             </div>
           </div>
         </div>
     </nav>
+
+    <div class="bg-success ad">
+      <p>Need an appointment? <span class="text-light">Call</span> <span class="text-light lead fs-4">7185850888</span></p>
+    </div>
 
     <section id="top-banner">
       <div class="row">      
@@ -54,14 +55,16 @@
           </div>   
       </div>
     </section>
- 
-<div class="row justify-content-center">
+
+<div id="about-us-anchor"></div>
+
+<div class="row justify-content-center bg-light">
   <div class="card p-md-5 m-5">
-    <div class="card-header fs-2 text-danger fw-bold">
+    <div id="about-us" class="card-header fs-2 text-danger fw-bold">
       About Us
     </div>
     <div class="card-body">
-      <h5 class="card-title text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam autem doloremque quo iusto quis nesciunt distinctio placeat hic unde? Provident saepe voluptatem cumque rem quisquam tempore aliquid. Nemo, distinctio!</h5>
+      <h5 class="card-title text-muted">Mangoos Physical Therapy (MPT) is a full service Orthopedic and Sports Physical Therapy private practice. We offer top-tier care for all orthopedic, sports, accident and work related injuries and conditions. MPT specializes in Workers Compensation, No Fault claims and Personal Injury cases. Our administrative staff also works closely with the injured person's physician, attorney and insurance company allowing the individual to focus entirely on his or her complete recovery. Unlike most clinics, we use a holistic approach to treat the whole person and not just their injury or condition. Our facility includes a physician, chiropractor and acupuncturist that enhance our therapy services. Our goal is to offer a natural non-invasive approach to healing by avoiding addictive drugs or unnecessary surgery. MPT offers a very convenient express door to door pick up service. Patients relax and ride comfortably in the care of our professional driver to and from their appointments.</h5>
     </div>
   </div>
 </div>
@@ -75,8 +78,10 @@
 <!--
 <img id="img-srvs" src="images/img-srvs2.jpg" alt="services image">
 -->
+<div id="services-anchor"></div>
+
     <section class="text1" id="services">
-      <div class="d-flex justify-content-center mt-3">
+      <div class="d-flex justify-content-center mt-5">
         <h2 class="stylize1 text-white pb-2">SERVICES</h2>
       </div>
       <h3 class="text-center fs-5">Mangoos Physical Therapy clinics are equipped with facilities and therapists to provide the following services. </h3>
@@ -85,81 +90,101 @@
           <img class="container-fluid" src="images/image_new.jpg" alt="pt-image">
         </div>
         <div class="srvcs-list col-md-6 ps-5 mt-3">
-          <h5>Electrical Stimulation
-            <ul> 
+          <h5><i class="fa-solid fa-caret-right"></i> Electrical Stimulation
+            <ul class="mt-1"> 
               <li>Transcutaneous Electrical Nerve Stimulation</li>
               <li>Functional Electrical Stimulation</li>
             </ul>
           </h5>
-          <h5>Therapeutic Exercises</h5>
-          <h5>Thermal Modalities
-            <ul> 
+          <h5><i class="fa-solid fa-caret-right"></i> Therapeutic Exercises</h5>
+          <h5><i class="fa-solid fa-caret-right"></i> Thermal Modalities
+            <ul class="mt-1"> 
               <li>Hot Moist Pack</li>
               <li>Therapeutic Ultrasound</li>
               <li>Cryotherapy</li>
           </ul></h5>
-          <h5>Athletic Taping</h5>
-          <h5>Hand Therapy</h5>       
-          <h5>Post-Operative Physical Therapy</h5>
-          <h5>Spine & Back Educational Programs</h5>
-          <h5>Sports Injury Rehabilitation</h5>
-          <h5>Work Injury Rehabilitation</h5>
-          <h5>Pre-operative Physical Therapy</h5>
+          <h5><i class="fa-solid fa-caret-right"></i> Athletic Taping</h5>
+          <h5><i class="fa-solid fa-caret-right"></i> Hand Therapy</h5>       
+          <h5><i class="fa-solid fa-caret-right"></i> Post-Operative Physical Therapy</h5>
+          <h5><i class="fa-solid fa-caret-right"></i> Spine & Back Educational Programs</h5>
+          <h5><i class="fa-solid fa-caret-right"></i> Sports Injury Rehabilitation</h5>
+          <h5><i class="fa-solid fa-caret-right"></i> Work Injury Rehabilitation</h5>
+          <h5><i class="fa-solid fa-caret-right"></i> Pre-operative Physical Therapy</h5>
         </div>
       </div>
       <div class="row mt-3">
         <div class="col-md-6 ps-5 mt-2 srvcs-list">
           <h2>Specialty Services:</h2>
           <div>
-            <h5>AC Joint Injuries</h5>
-            <h5>Achilles Tendinities - Achilles Insertional Calcific Tendinopathy (ACIT)</h5>
-            <h5>Achilles Tendon Rupture</h5>
-            <h5>Achilles Tendonitis</h5>
-            <h5>ACL Injuries</h5>
-            <h5>Ankle Fracture Surgery</h5>
-            <h5>Ankle Fractures (Broken Ankle)</h5>
-            <h5>Ankle Fusion Surgery</h5>
-            <h5>Anterior Cervical Corpectomy & Discectomy</h5>
-            <h5>Arthritis & Adult Reconstruction Surgery</h5>
-            <h5>Arthroscopic Articular Cartilage Repair</h5>
-            <h5>Arthroscopic Chondrosplasty</h5>
-            <h5>Arthroscopic Debridement of the Elbow</h5>
-            <h5>Arthroscopic Rotator Cuff Repair</h5>
-            <h5>Articular Cartilage Restoration</h5>
-            <h5>Artificial Disk Replacement (ADR)</h5>
-            <h5>Aspiration of the Olecranon Bursa</h5>
-            <h5>Atraumatic Shoulder Instability</h5>
-            <h5>Avascular Necrosis (Osteonecrosis)</h5>
-            <h5>Bankart Repair</h5>
-            <h5>Bicep Tendon Tear</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> AC Joint Injuries</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Achilles Tendinities - Achilles Insertional Calcific Tendinopathy (ACIT)</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Achilles Tendon Rupture</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Achilles Tendonitis</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> ACL Injuries</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Ankle Fracture Surgery</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Ankle Fractures (Broken Ankle)</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Ankle Fusion Surgery</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Anterior Cervical Corpectomy & Discectomy</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Arthritis & Adult Reconstruction Surgery</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Arthroscopic Articular Cartilage Repair</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Arthroscopic Chondrosplasty</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Arthroscopic Debridement of the Elbow</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Arthroscopic Rotator Cuff Repair</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Articular Cartilage Restoration</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Artificial Disk Replacement (ADR)</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Aspiration of the Olecranon Bursa</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Atraumatic Shoulder Instability</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Avascular Necrosis (Osteonecrosis)</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Bankart Repair</h5>
+            <h5><i class="fa-solid fa-caret-right"></i> Bicep Tendon Tear</h5>
           </div>
         </div>
         <div class="col-md-6">
           <div class="container">
             <img class="container-fluid" src="images/doctor1.jpg" alt="pt image">
           </div>
-          
         </div> 
       </div>
-      
     </section>
 
+<div id="doctors-anchor"></div>
+
     <section id="doctors">
-      <div class="d-flex flex-column justify-content-center align-items-center mt-3 pt-3 mb-5">
+      <div class="d-flex flex-column justify-content-center align-items-center mt-5 pt-3 mb-5">
         <h2 class="stylize1 text-white mb-2">Our Specialty Doctors</h2>
         <h3 class="mt-2 text-info">Michael Mangubat, PT</h3>
         <h3 class="mt-2 text-info">Miriam Opena, PT</h3>
       </div>
     </section>
 
+<div id="insurance-anchor"></div>
 
     <section id="insurance">
       <div class="mt-3 d-flex flex-column justify-content-center">
         <h2 class="stylize1 text-white">Insurance Accepted</h2>
-        <p class="ms-3">lorem</p>
-        <p class="ms-3">lorem</p>
-        <p class="ms-3">lorem</p>
-        <p class="ms-3">lorem</p>
+        <div class="mt-3 mb-5 container">
+            <img src="https://duckduckgo.com/i/95cd660a.png" class="in-logo rounded" alt="aetna logo">
+            <div class="ms-2 uhg_cons">
+              <img src="https://www.uhc.com/content/dam/uhcdotcom/website-assets/U-mark-blue.svg" width="40px" class=" rounded" alt="uhc logo">
+              <img src="https://www.uhc.com/content/dam/uhcdotcom/website-assets/uhc-wordmark-stacked-white-01.svg" width="130px" class="rounded" alt="uhc logo">
+            </div>
+            <img src="https://www.amerigroup.com/content/dam/digital/logos/agp/agp-logo.svg" class="ms-2 in-logo rounded" alt="amerigroup logo">
+            <img src="https://www.cigna.com/static/www-cigna-com/images/cigna-logo.svg" class="ms-2 in-logo rounded" alt="cigna logo">
+            <img src="https://www.emblemhealth.com/content/dam/emblemhealth/images/logos/eh-logo-2022.svg" class="ms-2 in-logo rounded" alt="emblemhealth logo">
+            <img src="https://www.nyhealthinsurer.com/wp-content/uploads/2012/06/HIP-Health-Plan-of-New-York-Health-Insurance.gif" class="ms-2 in-logo rounded" alt="HIP logo">
+            <img src="https://www.vnshealth.org/wp-content/uploads/2022/05/VNS-Health-Logo.svg" class="ms-2 in-logo rounded" alt="VNS logo">
+            <img src="https://www.fideliscare.org/Portals/_default/Skins/Orion/img/logoHorizontal.png" class="ms-2 in-logo rounded" alt="fidelis logo">
+            <img width="400px"  src="https://www.empireblue.com/content/dam/anthem/us/en/global/icons/ebcbs-ebc-logo.svg" class="ms-2 rounded" alt="empire logo">
+            <img src="https://healthfirst.org/wp-content/uploads/2022/09/hf-logo-flat.svg" class="ms-2 rounded in-logo" alt="healthfirst logo">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.yiPTenM2Uyzw3yzAaBd5ZwHaBO%26pid%3DApi&f=1&ipt=099c975ac83e920d418ddb34852ae31e4d906a1a5a4f8ac6199b7467015c44d0&ipo=images" class="ms-2 in-logo" alt="healthfirst logo">
+            <img src="https://static.wixstatic.com/media/6a7c4a_6f869c9c497543f6a0d2cd4b7e58884e~mv2.jpg/v1/fill/w_251,h_109,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/LOGO%20-%20AFFINITY%202-C%202020.jpg" class="ms-2 in-logo" alt="affinity logo">
+            <img src="https://mainsitedev.metroplus.org/Content/Images/MPH_2022_Long_Black_noborder.png" class="ms-2 in-logo" alt="metrohealth logo">
+            <img src="https://member.wellcare.com/-/media/Images/Member-Portal/Feature/WMP_Navigation/Wellcare-Logo.svg?la=en&hash=5EF01CA41948E200647CEC9B1C623690" class="ms-2 in-logo" alt="wellcare logo">
+            <img src="https://wcbdoc.services.conduent.com/Images/WCB_logo_R0-G116-B129_teal.jpg" class="ms-2 in-logo" alt="wcb logo">
+            <img src="https://duckduckgo.com/i/83697885.png" class="ms-2 in-logo" alt="humana logo">
+            <img width="300px" src="https://www.1199seiu.org/application/files/thumbnails/small/5714/7991/9658/LogoLockupWebColor.jpg" class="ms-2" alt="1199seiu logo">
+            <img width="300px" src="https://www.elderplan.org/wp-content/themes/elderplan/images/logo_2021.png" class="ms-2" alt="elderplan logo">
+        </div>
       </div>
     </section>
 
@@ -171,20 +196,19 @@
     </section>
 -->
 
-    <footer class="text-muted p-4">
+    <footer id="footer" class="text-white p-4">
       <div class="row">
         <div class="col-md-2">
           <img id="footerLogo" src="images/logo.png" alt="footer_logo">
         </div>
         <div class="col-md-10">
-          <p>&#169; Mangoos Physical Therapy</p>
+          <div class="foot_brand mb-2">&#169; Mangoos Physical Therapy</div>
           <p>825 Walton Ave</p>
           <p>Bronx NY 10451</p>
           <p>7185850888</p>
           <p>Fax 718-585-0880</p>
           <p>Email: mangoosphysicaltherapy@gmail.com</p>
           <p>Office Hours: Monday-Friday 10AM-6PM</p>
-          
         </div>
       </div>      
     </footer>

@@ -16,6 +16,20 @@ body{
 }
 .navbar{
     background-color: var(--text1);
+    position:fixed;
+    width:100vw;
+    z-index:99;
+}
+.ad{
+    z-index:1;
+    position:absolute;
+    top:84px;
+    width:100vw;
+    margin:0;
+}
+.ad p{
+    margin:0;
+    padding-left: 10px;
 }
 .logo{
     width:55px;
@@ -43,6 +57,7 @@ body{
     font-size:5rem;
 }
 #top-banner{
+    padding-top:120px;
     background-color: var(--color2);
 }
 @media (max-width:1000px){
@@ -78,16 +93,31 @@ body{
     background-color: var(--color2);
     padding-bottom:15px;
     padding-top:15px;
+    z-index:1;
 }
 #services h3{
     color:rgb(20, 58, 65);
 }
-
+#doctors-anchor{
+    z-index:-99;
+    position:absolute;
+    top:2500px;
+}
+#services-anchor{
+    z-index:-99;
+    position:absolute;
+    top:1300px;
+}
+#insurance-anchor{
+    z-index:-99;
+    position:absolute;
+    top:2850px;
+}
 .stylize1{
     display:inline-block;
     font-size:3rem;
     padding: 0px 0px;
-    z-index: 100;
+    z-index: 2;
     text-align: center;
     margin:0;
     
@@ -97,7 +127,8 @@ body{
 }
 li{
     font-size:1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 .srvcs-list h5{
     font-size: 1rem;
@@ -110,19 +141,36 @@ li{
     padding-bottom:15px;
     padding-top:15px;
 }
-
+.in-logo{
+    width:200px;
+    max-width:300px;
+}
+.uhg_cons{
+    width:200px;
+    display:inline-block;
+}
 footer{
+    font-family: 'Poppins', sans-serif;
     padding-left:30px;
     padding-top:30px;
     /*margin-top:100px;*/
     min-height:200px;
     background-color: rgba(128, 128, 128, 0.486);
+    height:300px;
 }
 footer p{
     margin:0px;
 }
 #footerLogo{
-    filter: grayscale(100%);
+    filter: grayscale(60%);
     max-width:150px;
     max-height:150px;
+}
+#footerLogo:hover{
+    filter: none;
+}
+.foot_brand{
+    font-size:1.5em;
+    border-bottom: 1px solid white;
+    width: 400px;
 }
