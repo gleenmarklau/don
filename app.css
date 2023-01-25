@@ -12,7 +12,7 @@ body{
 #banner{
     background-color:rgba(126, 199, 17, 0.76);
     height:40px;
-    width:100vw;
+    width:100;
 }
 .navbar{
     background-color: var(--text1);
@@ -73,8 +73,7 @@ body{
 }
 @media (max-width:1400px){
     #banner-img{
-        width:48vw;
-        min-width:400px;
+        max-width:400px;
     }
 }
 #banner-img-con{
@@ -141,9 +140,39 @@ li{
     padding-bottom:15px;
     padding-top:15px;
 }
+.uhg_logo{
+    width:40px;
+}
+.uhg_text{
+    width:150px;
+}
 .in-logo{
     width:200px;
     max-width:300px;
+}
+.in-logo400{
+    width:400px;
+}
+@media (max-width:400px){
+    .in-logo{
+        width:100px;
+        max-width:200px;
+        margin-top:10px;
+    }
+    .in-logo400{
+        width:200px;
+        margin-top:10px;
+    }
+    .uhg_logo{
+        width:25px;
+    }
+    .uhg_text{
+        width:80px;
+    }
+    .card h5{
+        font-size: 1rem;
+    }
+
 }
 .uhg_cons{
     width:200px;
@@ -173,4 +202,33 @@ footer p{
     font-size:1.5em;
     border-bottom: 1px solid white;
     width: 400px;
+}
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    .foot_brand{
+        width: 80vw;
+    }
+    #banner-img{
+        max-width:300px;
+        align-items: center;
+    }
+    #banner-img-con{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        max-width: 95vw;
+    }
+    footer{
+        height:500px;
+    }
+    .navbar-toggler{
+        display:none;
+    }
 }
