@@ -60,6 +60,9 @@ body{
     padding-top:120px;
     background-color: var(--color2);
 }
+.card-header{
+    border-bottom:none;
+}
 @media (max-width:1000px){
     .banner-text h2{
         font-size:3rem;
